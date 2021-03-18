@@ -4,7 +4,7 @@ import Home from './Home/home';
 import Plats from './Plats/Plats';
 import Login from './Account/login';
 import Register from './Account/register';
-
+import MesInformation from './User/MesInformation/info';
 
 export default function App() {
 
@@ -28,6 +28,10 @@ export default function App() {
                {/* Register Component*/}
                <Route path="/Register">
                   <Register/>
+               </Route>
+               {/* User Component / Mes Information */}
+               <Route path="/MesInformation">
+                  <MesInformation/>
                </Route>
             </Switch>
       </Router>
