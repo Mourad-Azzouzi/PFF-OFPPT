@@ -70,7 +70,7 @@ export default class Home extends Component {
         return (
             <div className="home">
                 <Navbar />
-                <section className="schopr shadow-1-strong" id="wave">
+                <section className="schopr" id="wave">
                     <div className="overlay"></div>
                     <div className="container">
                         <h1 className="brand">

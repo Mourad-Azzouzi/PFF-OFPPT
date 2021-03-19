@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../Navbar/navbar';
 import Footer from '../Footer/Footer';
+import {Link} from 'react-router-dom';
 
 export default class Login extends React.Component {
     render() {
@@ -13,17 +14,17 @@ export default class Login extends React.Component {
                             <h1 className="text-center title mb-4">S'inscrire a <span>Mk' Beldi</span></h1>
                             <div class="form-outline mb-4">
                                 <input type="text" id="form6Example1" class="form-control" autoComplete= "off"/>
-                                <label class="form-label" for="form6Example1">First name</label>
+                                <label class="form-label" for="form6Example1">Nom Complet</label>
                             </div>
 
                             <div class="form-outline mb-4">
                                 <input type="text" id="form6Example4" class="form-control" autoComplete="off"/>
-                                <label class="form-label" for="form6Example4">Address</label>
+                                <label class="form-label" for="form6Example4">Addresse</label>
                             </div>
 
                             <div class="form-outline mb-4">
                                 <input type="email" id="form6Example5" class="form-control" autoComplete="off"/>
-                                <label class="form-label" for="form6Example5">Email</label>
+                                <label class="form-label" for="form6Example5">E-mail</label>
                             </div>
 
                             <div class="form-outline mb-4">
@@ -48,9 +49,9 @@ export default class Login extends React.Component {
 
                             <button type="submit" class="btn btn-primary btn-block mb-4">S'inscrire</button>
 
-                            <p>Tu avais deja un compte ? <a href="#">S'identifier</a></p>
+                            <p>Tu avais deja un compte ? <Link to="/Login">Se connecter</Link></p>
                             <div className="text-center">
-                            <p>Or sign up with :</p>
+                            <p>Où creér un compte avec :</p>
                             <button type="button" className="btn btn-primary btn-floating mx-1">
                                 <i className="fab fa-facebook-f"></i>
                             </button>

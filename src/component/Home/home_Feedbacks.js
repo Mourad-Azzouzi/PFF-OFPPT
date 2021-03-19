@@ -23,7 +23,7 @@ export default class Feedbacks extends React.Component {
                <h6 className="m-1" >Votre feedback nous interésse</h6>
                <div className="row">
                   <div className="feedback-slider col col-lg-7 col-sm-12 mt-4 mb-4">
-                     <div class="carousel" data-flickity>
+                     <div class="carousel" data-flickity='{"autoPlay":"true"}'>
                         
                         {this.feedbackMapping(this.props.feedbacks)}
 

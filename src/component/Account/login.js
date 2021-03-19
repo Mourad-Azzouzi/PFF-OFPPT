@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar/navbar';
 import Footer from '../Footer/Footer';
+import {Link} from 'react-router-dom';
 
 export default class register extends React.Component {
     render() {
@@ -9,7 +10,7 @@ export default class register extends React.Component {
                 <Navbar />
                 <section className="login p-3">
                     <form action="" className="frm_login shadow container pb-5" novalidate>
-                        <h1 className=" text-md-center title">S'inscrire a <span>Mk' Beldi</span></h1>
+                        <h1 className=" text-md-center title">Se Connecter a <span>Mk' Beldi</span></h1>
                         <div className="form-outline mb-4">
                             <input type="email" id="form2Example1" className="form-control" autoComplete="off"/>
                             <label className="form-label" for="form2Example1">E-mail address</label>
@@ -38,11 +39,11 @@ export default class register extends React.Component {
                             </div>
                         </div>
 
-                        <button type="submit" className="btn btn-primary btn-block mb-4">Sign in</button>
+                        <button type="submit" className="btn btn-primary btn-block mb-4">Se Connecter</button>
 
                         <div className="text-center">
-                            <p className="text-start">Vous n'avez pas de compte? <a href="#!">S'identifier</a></p>
-                            <p>Or sign up with :</p>
+                            <p className="text-start">Vous n'avez pas de compte? <Link to="/Register">Créer un compte</Link></p>
+                            <p>Où se connecter avec:</p>
                             <button type="button" className="btn btn-primary btn-floating mx-1">
                                 <i className="fab fa-facebook-f"></i>
                             </button>
