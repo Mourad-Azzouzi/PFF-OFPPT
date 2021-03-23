@@ -113,9 +113,10 @@ footer{
     // background: url('../images/bg-image.jpg') center center/cover;
     height: 420px;
     width: 100%;
-    padding: 55px 0 0 0;
+    padding: 30px 0;
     background-clip: border-box;
     position: relative;
+    margin: 45px 0 0 0;
     
     .overlay{
         backdrop-filter: blur(3px);
@@ -500,12 +501,25 @@ footer{
     .product{
         border: 1px solid rgba(0, 0, 0, 0.158);
         border-radius: 20px;
-        transition: all .3s ease;
+        transition: all .6s ease;
+        .card-body button{
+            text-transform: none;
+            transition: all .6s ease;
+        }
+        span.share{
+            i{
+                cursor: pointer;
+                &:hover{
+                    color: lighten(black, 40%);
+                }
+            }
+        }
         &:hover{
-            border: 1px solid #f93152b0;
+            border: 1px solid #f9315259;
             // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.219);
             .card-body button{
-                background-color: #f93154;
+                border: 2px solid #4f4f4f;
+                background-color: #4f4f4f;
                 color: white;
             }
         }

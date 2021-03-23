@@ -102,9 +102,10 @@ footer .copyright {
   background: linear-gradient(180deg, #95808f, white);
   height: 420px;
   width: 100%;
-  padding: 55px 0 0 0;
+  padding: 30px 0;
   background-clip: border-box;
   position: relative;
+  margin: 45px 0 0 0;
 }
 
 .schopr .overlay {
@@ -624,16 +625,31 @@ footer .copyright {
 .CategoryPlats .product {
   border: 1px solid rgba(0, 0, 0, 0.158);
   border-radius: 20px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.CategoryPlats .product .card-body button {
+  text-transform: none;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.CategoryPlats .product span.share i {
+  cursor: pointer;
+}
+
+.CategoryPlats .product span.share i:hover {
+  color: #666666;
 }
 
 .CategoryPlats .product:hover {
-  border: 1px solid #f93152b0;
+  border: 1px solid #f9315259;
 }
 
 .CategoryPlats .product:hover .card-body button {
-  background-color: #f93154;
+  border: 2px solid #4f4f4f;
+  background-color: #4f4f4f;
   color: white;
 }
 

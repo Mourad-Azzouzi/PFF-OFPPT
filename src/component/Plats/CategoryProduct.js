@@ -11,7 +11,8 @@ export default class extends React.Component{
                     <h6>{this.props.title}</h6>
                     <span>Prix : <strong>{this.props.MinPrice} DH</strong> - {this.props.MaxPrice} DH</span>
                     <span className="text-right float-end">{this.props.likes} <i className="fas fa-heart text-danger"></i></span><br></br>
-                    <button className="btn btn-outline-danger w-100 p-1 " data-mdb-ripple-color="dark">Commander</button>
+                    <button className="btn btn-outline- p-1" data-mdb-ripple-color="dark">Commander</button>
+                    <span className="mt-3 mx-2 share"><strong><i class="fas fa-share-square">&nbsp;Partager</i></strong></span>
                 </div>
             </div>
         )
