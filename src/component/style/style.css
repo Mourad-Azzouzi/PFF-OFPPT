@@ -1019,4 +1019,24 @@ footer .copyright {
     width: 80%;
   }
 }
+
+.login miniFooter {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-family: sora;
+}
+
+@media (max-width: 850px) {
+  .login miniFooter {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 10px;
+    left: 20px;
+    right: auto;
+    border-radius: 5px;
+    font-size: 13px;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */

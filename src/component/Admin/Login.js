@@ -4,12 +4,12 @@ const Login = () => {
    return(
       <div className="login">
          <div className="brand d-inline">
-            <i className="fas fa-utensils"></i><span>Mk' Beldi</span><sub> Admin </sub>
+            <i className="fas fa-utensils"></i><span>Mk' Beldi</span><sub className="bg-dark p-1 m-1 rounded">Admin </sub>
          </div>
          <div className="overlay"></div>
          <div className="container">
             <form className="ad-frm-login shadow-1-strong">
-               <div className="mb-4"><h2>Se Connecter a <span>Mk' Beldi<sub>&nbsp;Admin</sub></span></h2></div>
+               <div className="mb-4"><h2>Se Connecter a <span>Mk' Beldi<sub className="bg-dark p-1 m-1 rounded text-white">Admin</sub></span></h2></div>
                <div class="form-outline mb-4">
                   <input type="email" id="form2Example1" class="form-control" autoComplete="off"/>
                   <label class="form-label" for="form2Example1">Email address</label>
@@ -29,6 +29,10 @@ const Login = () => {
                <button type="submit" class="btn btn-primary btn-block mb-2">Se Connecter</button>
             </form>
          </div>
+
+         <miniFooter>
+            Copyright © 2021 - Tous Les Droits Sont  Réservés
+         </miniFooter>
       </div>
 
    )

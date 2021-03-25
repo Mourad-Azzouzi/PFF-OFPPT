@@ -32,7 +32,7 @@ export default function App() {
                   <Register/>
                </Route>
                {/* User Component / Mes Information */}
-               <Route path="/MesInformation">
+               <Route path="/User/Personal-info">
                   <MesInformation/>
                </Route>
                {/* Product infos */}
