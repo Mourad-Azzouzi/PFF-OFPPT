@@ -818,4 +818,205 @@ footer .copyright {
 .form-outline .form-control ~ .form-label {
   left: 0;
 }
+
+#SideBar {
+  width: 350px;
+  padding: 0 10px;
+}
+
+#SideBar .panier-header {
+  padding: 20px 4px 5px;
+}
+
+#SideBar .panier-header > i span {
+  font-family: sora;
+}
+
+#SideBar .panier-header button {
+  float: right;
+  background-color: transparent;
+}
+
+#SideBar .panier-header button i {
+  font-size: 24px;
+  color: #4f4f4f;
+}
+
+#SideBar .panier-header .lines {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#SideBar .panier .title {
+  font-family: sora;
+}
+
+#SideBar .product {
+  background-color: #ededed;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+#SideBar .product img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8%;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  -webkit-box-shadow: #0000002d 1px 1px 3px;
+          box-shadow: #0000002d 1px 1px 3px;
+  float: left;
+  margin-right: 8px;
+}
+
+#SideBar .product .PetM {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+#SideBar .product .PetM .Moin, #SideBar .product .PetM .Plus, #SideBar .product .PetM .input {
+  padding-top: 1px;
+  height: 22px;
+  width: 20px;
+}
+
+#SideBar .product .PetM .input {
+  width: 40px;
+  padding-top: 8px;
+  height: 25px;
+}
+
+#SideBar .product .price-delete {
+  overflow: auto;
+  height: 40px;
+  margin-top: 10px;
+}
+
+#SideBar .product .price-delete .price {
+  font-size: 17px;
+  font-family: sora;
+  padding: 10px;
+}
+
+#SideBar .product .price-delete .btn-delete {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: red;
+  float: right;
+}
+
+#SideBar .product .price-delete .btn-delete i span {
+  font-family: sora;
+}
+
+.login {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .brand {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  z-index: 1;
+  color: white;
+}
+
+.login .brand span {
+  font-family: righteous;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.login .brand i {
+  font-size: 21px;
+  position: relative;
+  top: -3px;
+}
+
+.login::after {
+  content: "";
+  width: 50%;
+  background-color: #4f4f4f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 1;
+  background: url("https://images.unsplash.com/photo-1532980400857-e8d9d275d858?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80") center center/cover;
+}
+
+.login .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #c21e9336;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.login .ad-frm-login {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  border-radius: 8px;
+  padding: 20px 40px;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 1000;
+}
+
+.login .ad-frm-login h2 {
+  text-align: center;
+  font-family: righteous;
+}
+
+.login .ad-frm-login h2 span {
+  color: #95808F;
+}
+
+.login .ad-frm-login h2 sub {
+  font-size: 12px;
+  color: #4f4f4f;
+}
+
+.login .ad-frm-login input[type=email], .login .ad-frm-login input[type=password] {
+  border-bottom: 1px solid;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.login .ad-frm-login input[type=checkbox] {
+  position: reltive;
+  bottom: -3px;
+}
+
+@media (max-width: 769px) {
+  .login .ad-frm-login {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .login .ad-frm-login {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

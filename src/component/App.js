@@ -4,7 +4,9 @@ import Home from './Home/home';
 import Plats from './Plats/Plats';
 import Login from './Account/login';
 import Register from './Account/register';
+import Product from './amine-src/EachProduct';
 import MesInformation from './User/MesInformation/info';
+import Admin_Login from './Admin/Login'
 
 export default function App() {
 
@@ -32,6 +34,14 @@ export default function App() {
                {/* User Component / Mes Information */}
                <Route path="/MesInformation">
                   <MesInformation/>
+               </Route>
+               {/* Product infos */}
+               <Route path="/Product">
+                  <Product/>
+               </Route>
+               {/* Admin Page - Login */}
+               <Route path="/Admin/Login">
+                  <Admin_Login/>
                </Route>
             </Switch>
       </Router>

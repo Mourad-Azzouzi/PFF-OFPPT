@@ -1,14 +1,14 @@
 .EachProdPage_div{
-    width: 98%;
-    margin: 34px 0 0 17px;
+    width: 95%;
+    margin: 35px auto;
 }
 #SideBar{
     background-color: white;
     border: 1px solid rgba(199, 199, 199, 0.863);
-    width: 23%;
+    width: 300px;
     height: 100%;
     position: fixed;
-    top: 0;
+    top: 54px;
     right: 0;
 }
 .FicheProd, .reviews{
@@ -16,9 +16,9 @@
 
 }
 .ProdPic{
-    background-color: black;
-    width: 50%;
+    width: 100%;
 }
+
 .information{
     border: 1px solid silver;
     width: 50%;
@@ -26,7 +26,7 @@
 .infos{
     margin: 30px 0 0 25px;
 }
-.ProdPic img, #desc_img{
+#desc_img{
     width: 100%;
     max-height: 565px;
 }
@@ -41,26 +41,26 @@
     color: rgb(0, 105, 224);
 }
 .Price{
-    background-color: rgb(197, 80, 80);
-    width: 32%;
-    height: 48px;
-    color: white;
-    margin-top: 8px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    color: rgb(24, 24, 24);
+    margin: 0px 0;
+    font-size: 22px;
+    font-family: sora;
 }
-.Price .Prix{
-    width: 98%;
-    font-size: 28px;
-    padding: 2px 0 0 8px;
-}
+
 .nbPersonnes, .Quantite{
-    margin-top: 25px;
+    margin: 15px 0;
 }
+
 .nbPersonnes p , .Quantite p, #Review p, .description_On p{
-    font-size: 19px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-family: sora;
 }
 .listNbPer, .nbPersonnes p, .PetM, .Quantite p{
     margin: 0;
+    font-family: sora;
+    outline: none;
 }
 .input{
     width: 8%;
@@ -95,22 +95,27 @@
 .comPan{
     margin: 20px 0 20px 0;
 }
-#Commander{
+#Commander,#APanier{
     color: white;
     background-color: dodgerblue;
-    border-radius: 23px;
+    border-radius: 25px;
     border: none;
-    width: 27%;
-    height: 45px;
+    font-size: 16px;
     margin-right: 10px;
+    padding: 4px 15px;
+    border: 2px solid dodgerblue;
 }
 #APanier{
-    color: orange;
+    /* 
     background-color: white;
     border: 2px solid orange;
     border-radius: 23px;
     width: 31%;
-    height: 45px;    
+    height: 45px;     */
+    color: orange;
+    background-color: white;
+    border: 2px solid orange;
+
 }
 #APanier:focus, #Commander:focus, #Description_btn:focus
 , #Avis_btn:focus, .fermerSB:focus, .inputSB:focus, .btnSB:focus{
@@ -245,4 +250,124 @@
 .btnSB{
     background-color: rgba(209, 209, 209, 0);
     color: red;
+}
+
+.shipInfo .info{
+    line-height: 1.8;
+}
+.shipInfo .info i span{
+    font-family: sora;
+    font-weight: 400;
+}
+
+.FicheProd .infos h4{
+    font-family: Righteous;
+}
+
+.avisNember{
+    font-family: sora;
+}
+
+.OtherPic img{
+    max-width: 90px;
+    max-height: 80px;
+}
+
+.ProdPic img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.OtherPic img{
+    width: 90px;
+}
+
+.PetM .Moin,.PetM .Plus{
+    width: 30px;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 17px;
+}
+
+.PetM input.input{
+    margin: 0 3px;
+    padding-top: 7px;  
+}
+
+.description{
+    font-family: sora;
+}
+
+.comPan btn{
+    font-family: sora;
+}
+
+@media (max-width:769px)
+{
+    .FicheProd{
+        display: grid;
+        grid-template-columns: auto;
+        height: max-content;
+    }
+    .FicheProd img{
+        width: 100%;
+        height: 300px;
+    }
+    .information{
+        min-width: 100%;
+        margin: 20px 0 10px 0;
+        border: none;
+        padding: 10px 5px;
+    }
+    .discription_Review{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+@media (min-width:769px)
+{
+    .FicheProd{
+        display: grid;
+        grid-template-columns: auto;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .ProdPic{
+        width: 100%;
+    }
+
+    .ProdPic > img{
+        min-width: 100%;
+    }
+    .information{
+        margin: 100px 0 20px;
+        width: 100%;
+        border: none;
+    }
+    .discription_Review{
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .FicheProd{
+        display: grid;
+        grid-template-columns: auto auto;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .ProdPic{
+        width: 100%;
+    }
+    .information{
+        margin: 0px 0;
+        width: 100%;
+        height: 100%;
+    }
+    .discription_Review{
+        margin-top: 120px;
+    }
 }
