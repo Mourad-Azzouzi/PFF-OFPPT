@@ -911,7 +911,7 @@ footer .copyright {
   font-family: sora;
 }
 
-.login {
+.admin-login {
   position: absolute;
   left: 0;
   right: 0;
@@ -928,7 +928,7 @@ footer .copyright {
           align-items: center;
 }
 
-.login .brand {
+.admin-login .brand {
   position: absolute;
   left: 15px;
   top: 20px;
@@ -936,19 +936,19 @@ footer .copyright {
   color: white;
 }
 
-.login .brand span {
+.admin-login .brand span {
   font-family: righteous;
   font-size: 30px;
   font-weight: 500;
 }
 
-.login .brand i {
+.admin-login .brand i {
   font-size: 21px;
   position: relative;
   top: -3px;
 }
 
-.login::after {
+.admin-login::after {
   content: "";
   width: 50%;
   background-color: #4f4f4f;
@@ -961,7 +961,7 @@ footer .copyright {
   background: url("https://images.unsplash.com/photo-1532980400857-e8d9d275d858?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80") center center/cover;
 }
 
-.login .overlay {
+.admin-login .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -972,7 +972,7 @@ footer .copyright {
           backdrop-filter: blur(3px);
 }
 
-.login .ad-frm-login {
+.admin-login .ad-frm-login {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.185);
   border-radius: 8px;
@@ -983,44 +983,44 @@ footer .copyright {
   z-index: 1000;
 }
 
-.login .ad-frm-login h2 {
+.admin-login .ad-frm-login h2 {
   text-align: center;
   font-family: righteous;
 }
 
-.login .ad-frm-login h2 span {
+.admin-login .ad-frm-login h2 span {
   color: #95808F;
 }
 
-.login .ad-frm-login h2 sub {
+.admin-login .ad-frm-login h2 sub {
   font-size: 12px;
   color: #4f4f4f;
 }
 
-.login .ad-frm-login input[type=email], .login .ad-frm-login input[type=password] {
+.admin-login .ad-frm-login input[type=email], .admin-login .ad-frm-login input[type=password] {
   border-bottom: 1px solid;
   border-radius: 0;
   padding-left: 0;
 }
 
-.login .ad-frm-login input[type=checkbox] {
+.admin-login .ad-frm-login input[type=checkbox] {
   position: reltive;
   bottom: -3px;
 }
 
 @media (max-width: 769px) {
-  .login .ad-frm-login {
+  .admin-login .ad-frm-login {
     min-width: 100%;
   }
 }
 
 @media (max-width: 992px) {
-  .login .ad-frm-login {
+  .admin-login .ad-frm-login {
     width: 80%;
   }
 }
 
-.login miniFooter {
+.admin-login miniFooter {
   position: absolute;
   right: 20px;
   bottom: 10px;
@@ -1028,7 +1028,7 @@ footer .copyright {
 }
 
 @media (max-width: 850px) {
-  .login miniFooter {
+  .admin-login miniFooter {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 8px 10px;
@@ -1038,5 +1038,62 @@ footer .copyright {
     font-size: 13px;
     margin: auto;
   }
+}
+
+.ManageProducts .ad-navbar {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.ManageProducts .ad-navbar .primary-nav {
+  min-width: 210px;
+  background-color: #95808F;
+  padding: 10px 10px;
+  color: white;
+  margin-right: 2px;
+}
+
+.ManageProducts .ad-navbar .primary-nav .brand sub {
+  font-family: sora;
+  font-size: 12px;
+}
+
+@media (max-width: 769px) {
+  .ManageProducts .ad-navbar .primary-nav .brand sub {
+    font-size: 8px;
+  }
+}
+
+.ManageProducts .ad-navbar .primary-nav .brand .fa-bars {
+  font-size: 21px;
+  float: right;
+  padding-top: 7px;
+  cursor: pointer;
+}
+
+.ManageProducts .ad-navbar .primary-nav .brand i:first-child {
+  font-size: 17px;
+  position: relative;
+  top: -2px;
+}
+
+.ManageProducts .ad-navbar .primary-nav .brand span {
+  font-size: 22px;
+  font-family: righteous;
+}
+
+@media (min-width: 992px) {
+  .ManageProducts .ad-navbar .primary-nav {
+    min-width: 250px;
+  }
+}
+
+.ManageProducts .ad-navbar .secondary-nav {
+  width: 100%;
+  background-color: #e6e6e6;
+  padding: 10px 10px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
