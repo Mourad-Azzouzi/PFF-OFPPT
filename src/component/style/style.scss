@@ -5,9 +5,12 @@
 // start Navbar style
 
 
-nav{
+.mk-bg{
     background-color: #95808F;
-    z-index: 2;
+    z-index: 1000;
+}
+.navigation{
+    outline: none;
 }
 
 .navbar-brand{
@@ -889,57 +892,99 @@ footer{
 
 // Admin Navbars Style
 
- .ManageProducts{
+.ad-navbar{
+    .navbar{
+        background-color: whitesmoke;
+    }
+    a,i{
+        color: #000000b7;
+    }
+    .dropdown-menu{
+        background-color: whitesmoke;
+        border: 1px solid rgba(0, 0, 0, 0.212);
+    }
+    span.brand{
+        font-size: 22px;
+    }
+    .fa-utensils{
+        position: relative;
+        top: 0px;
+    }
 
-     .ad-navbar{
-        width: 100%;
-        display: inline-flex;
-        .primary-nav{
-            min-width: 210px;
-            background-color:#95808F;
-            padding: 10px 10px;
-            color:white;
-            margin-right: 2px;
-
-            .brand{
-
-                sub{
-                    font-family: sora;
-                    font-size: 12px;
-                    @media (max-width:769px) {
-                        font-size: 8px;
-                    }
-                }
-                .fa-bars{
-                    font-size: 21px;
-                    float: right;
-                    padding-top: 7px;
-                    cursor: pointer;
-                }
-                i:first-child{
-                    font-size: 17px;
-                    position: relative;
-                    top: -2px;
-                }
-                span{
-                    font-size: 22px;
-                    font-family: righteous;
-                }
-            }
-
-            @media (min-width:992px) {
-                min-width: 250px;
-            }
-        }
-        .secondary-nav{
-            width: 100%;
-            background-color: rgb(230, 230, 230);
-            padding: 10px 10px;
-            color: white;
-        }
-        
-     }
- }
-
+    
+}
 
 // End Admin Page Style
+
+
+
+
+// Start admin manage product
+.ManageProducts{
+    .listCategory{
+        background-color: rgb(255, 255, 255);
+        margin-top: 68px;
+        padding: 25px;
+    }
+}
+table{
+    background-color: white;
+    border-collapse: collapse;
+    tr{
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.363);
+    }
+}
+
+
+.Add_Category, .Add_Produit, .productsList{
+    margin: 5px 0;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    a{
+        font-family: sora;
+    }
+}
+
+.add-Category-Modal {
+    .modal-body{
+        .txt-cat-name{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.500);
+            border-radius: 0;
+            padding-left: 0;
+            margin-bottom: 2px;
+        }
+        .btn-save{
+            margin-top: 0;
+        }
+    }
+}
+
+.add-product-modal{
+    .modal-body{
+        input[type=text]{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.500);
+            border-radius: 0;
+            padding-top: 8px;
+            padding-left: 0;
+        }
+    }
+}
+// End admin manage product 
+
+
+
+
+// Start Manage Orders Style 
+
+.ManageOrders{
+    margin: 70px 0 0 0;
+
+    .orders{
+        background-color: rgb(255, 255, 255);
+        margin: 5px 0;
+        padding: 20px;
+        border-top: 5px solid rgba(0, 0, 0, 0.5);
+    }
+}
+
+// End Manage Orders Style

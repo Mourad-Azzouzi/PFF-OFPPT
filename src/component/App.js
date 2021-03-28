@@ -8,7 +8,8 @@ import Product from './amine-src/EachProduct';
 import MesInformation from './User/MesInformation/info';
 import Admin_Login from './Admin/Login';
 import GererProduits from './Admin/AdminComponents/ManageProducts';
-import TopNav from './Admin/AdminNavs/navTop'
+import GererCommandes from './Admin/AdminComponents/ManageOrders';
+import MakeOrder from './amine-src/makeOrder';
 
 export default function App() {
 
@@ -51,9 +52,15 @@ export default function App() {
                </Route>
 
                {/* This Is For Test */}
-               <Route path="/Admin/TopNav"> 
-                  <TopNav/>
+               <Route path="/Admin/Manage/Orders"> 
+                  <GererCommandes/>                 
                </Route>
+
+               {/* Make Order */}
+               <Route path="/makeOrder"> 
+                  <MakeOrder/>
+               </Route>
+
             </Switch>
       </Router>
    )

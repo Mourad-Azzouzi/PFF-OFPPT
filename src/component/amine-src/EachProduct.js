@@ -133,9 +133,12 @@ const EachProd = () => {
                                 <section className="nbPersonnes">
                                     <p>Veuiller selectionner pour combien de personnes ?</p>
                                     <select className="listNbPer p-1">
-                                        <option>individuel</option>
-                                        <option>Deux personnes</option>
-                                        <option>Quatre personnes</option>
+                                        <option value="individual">individuel</option>
+                                        <option value="2p">2 personnes</option>
+                                        <option value="4p">4 personne</option>
+                                        <option value="6p">6 personne</option>
+                                        <option value="8p">8 personnes</option>
+                                        <option value="10p">10 personnes</option>
                                     </select>
                                 </section>
                                 <section className="Quantite">

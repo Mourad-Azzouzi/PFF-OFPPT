@@ -3,9 +3,13 @@
           box-sizing: border-box;
 }
 
-nav {
+.mk-bg {
   background-color: #95808F;
-  z-index: 2;
+  z-index: 1000;
+}
+
+.navigation {
+  outline: none;
 }
 
 .navbar-brand {
@@ -1040,60 +1044,80 @@ footer .copyright {
   }
 }
 
-.ManageProducts .ad-navbar {
-  width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.ad-navbar .navbar {
+  background-color: whitesmoke;
 }
 
-.ManageProducts .ad-navbar .primary-nav {
-  min-width: 210px;
-  background-color: #95808F;
-  padding: 10px 10px;
-  color: white;
-  margin-right: 2px;
+.ad-navbar a, .ad-navbar i {
+  color: #000000b7;
 }
 
-.ManageProducts .ad-navbar .primary-nav .brand sub {
-  font-family: sora;
-  font-size: 12px;
+.ad-navbar .dropdown-menu {
+  background-color: whitesmoke;
+  border: 1px solid rgba(0, 0, 0, 0.212);
 }
 
-@media (max-width: 769px) {
-  .ManageProducts .ad-navbar .primary-nav .brand sub {
-    font-size: 8px;
-  }
-}
-
-.ManageProducts .ad-navbar .primary-nav .brand .fa-bars {
-  font-size: 21px;
-  float: right;
-  padding-top: 7px;
-  cursor: pointer;
-}
-
-.ManageProducts .ad-navbar .primary-nav .brand i:first-child {
-  font-size: 17px;
-  position: relative;
-  top: -2px;
-}
-
-.ManageProducts .ad-navbar .primary-nav .brand span {
+.ad-navbar span.brand {
   font-size: 22px;
-  font-family: righteous;
 }
 
-@media (min-width: 992px) {
-  .ManageProducts .ad-navbar .primary-nav {
-    min-width: 250px;
-  }
+.ad-navbar .fa-utensils {
+  position: relative;
+  top: 0px;
 }
 
-.ManageProducts .ad-navbar .secondary-nav {
-  width: 100%;
-  background-color: #e6e6e6;
-  padding: 10px 10px;
-  color: white;
+.ManageProducts .listCategory {
+  background-color: white;
+  margin-top: 68px;
+  padding: 25px;
+}
+
+table {
+  background-color: white;
+  border-collapse: collapse;
+}
+
+table tr {
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.363);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.363);
+}
+
+.Add_Category, .Add_Produit, .productsList {
+  margin: 5px 0;
+  padding: 20px;
+  background-color: white;
+}
+
+.Add_Category a, .Add_Produit a, .productsList a {
+  font-family: sora;
+}
+
+.add-Category-Modal .modal-body .txt-cat-name {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  padding-left: 0;
+  margin-bottom: 2px;
+}
+
+.add-Category-Modal .modal-body .btn-save {
+  margin-top: 0;
+}
+
+.add-product-modal .modal-body input[type=text] {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  padding-top: 8px;
+  padding-left: 0;
+}
+
+.ManageOrders {
+  margin: 70px 0 0 0;
+}
+
+.ManageOrders .orders {
+  background-color: white;
+  margin: 5px 0;
+  padding: 20px;
+  border-top: 5px solid rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
