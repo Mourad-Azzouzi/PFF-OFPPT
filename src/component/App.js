@@ -6,7 +6,10 @@ import Login from './Account/login';
 import Register from './Account/register';
 import Product from './amine-src/EachProduct';
 import MesInformation from './User/MesInformation/info';
-import Admin_Login from './Admin/Login'
+import Admin_Login from './Admin/Login';
+import GererProduits from './Admin/AdminComponents/ManageProducts';
+import GererCommandes from './Admin/AdminComponents/ManageOrders';
+import MakeOrder from './amine-src/makeOrder';
 
 export default function App() {
 
@@ -43,6 +46,21 @@ export default function App() {
                <Route path="/Admin/Login">
                   <Admin_Login/>
                </Route>
+               {/* Admin - Product Management */}
+               <Route path="/Admin/Manage/Product">
+                  <GererProduits/>
+               </Route>
+
+               {/* This Is For Test */}
+               <Route path="/Admin/Manage/Orders"> 
+                  <GererCommandes/>                 
+               </Route>
+
+               {/* Make Order */}
+               <Route path="/makeOrder"> 
+                  <MakeOrder/>
+               </Route>
+
             </Switch>
       </Router>
    )
