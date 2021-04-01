@@ -65,9 +65,16 @@ const EachProd = () => {
             setTurnOn(1);
             //setProduct(titles);
             setProduct(product);
+            localStorage.setItem('titles',JSON.stringify(product));
         }
     };
 
+    useEffect(() =>{
+        var retrievedObject = localStorage.getItem('titles');
+         if(retrievedObject){
+             setProduct(JSON.parse(retrievedObject));
+         };
+    },[]);
 
     var AvisOn = () => {
         if (Avis === 0) {
