@@ -31,11 +31,11 @@ export default class Feedbacks extends React.Component {
                   </div>
                   <div className="feedback-form col-lg-4 col-sm-12">
                      <form action="" className="w-100">
-                        <table className="w-100">
-                           <tr><td><input type="text" placeholder="Nom Complete" required /></td></tr>
-                           <tr><td><input type="email" placeholder="Votre E-mail" required /></td></tr>
-                           <tr><td><input type="text" placeholder="Votre feedback" required /></td></tr>
-                           <tr><td><button className="btn btn-outline-" data-mdb-ripple-color="dark">Envoyer</button></td></tr>
+                        <table className="w-100 bg-transparent border-0">
+                           <tr className="border-0 shadow-0"><td><input type="text" placeholder="Nom Complete" required /></td></tr>
+                           <tr className="border-0 shadow-0"><td><input type="email" placeholder="Votre E-mail" required /></td></tr>
+                           <tr className="border-0 shadow-0"><td><input type="text" placeholder="Votre feedback" required /></td></tr>
+                           <tr className="border-0 shadow-0"><td><button className="btn btn-outline-" data-mdb-ripple-color="dark">Envoyer</button></td></tr>
                         </table>
                      </form>
                   </div>

@@ -22,9 +22,8 @@ function Footer(){
                     </div>
                     <div className="col-sm-10 col-md-3 nv mb-4">
                     <h5>Support</h5>
-                        <a href="">Exemple1</a><br></br>
-                        <a href="">Exemple2</a><br></br>
-                        <a href="">Exemple3</a><br></br>
+                        <a href="">Passer une commande</a><br></br>
+                        <a href="">Contacter nous</a><br></br>
                     </div>
             </div>
             <hr/>

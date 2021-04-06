@@ -1066,10 +1066,19 @@ footer .copyright {
   top: 0px;
 }
 
+.ManageProducts {
+  font-family: Sora;
+}
+
 .ManageProducts .listCategory {
   background-color: white;
   margin-top: 68px;
   padding: 25px;
+}
+
+.ManageProducts .listCategory .btn-update-cat:hover, .ManageProducts .listCategory .btn-delete-cat:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 table {
@@ -1092,6 +1101,14 @@ table tr {
   font-family: sora;
 }
 
+.product-description {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  outline: none;
+  padding: 8px;
+}
+
 .add-Category-Modal .modal-body .txt-cat-name {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 0;
@@ -1112,6 +1129,7 @@ table tr {
 
 .ManageOrders {
   margin: 70px 0 0 0;
+  font-family: Sora;
 }
 
 .ManageOrders .orders {
@@ -1119,5 +1137,80 @@ table tr {
   margin: 5px 0;
   padding: 20px;
   border-top: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.infoClient, .infoCommande {
+  font-size: 16px;
+}
+
+.orderInfo {
+  font-family: Sora;
+  border-top: 4px solid;
+  background: white;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
+  padding: 20px 30px;
+  margin-top: 68px;
+}
+
+.orderInfo table tr {
+  border: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+.orderInfo table tr, .orderInfo table td, .orderInfo table th {
+  padding: 4px 8px;
+}
+
+.client-info {
+  border-top: 4px solid;
+  margin: 15px 0;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
+  padding: 20px 30px;
+  font-family: sora;
+}
+
+.client-info .frm-client-info {
+  margin: 20px 0;
+}
+
+.client-info .frm-client-info input[type=text] {
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+  padding-left: 0;
+}
+
+.ManageFeedbacks {
+  margin: 68px 0;
+}
+
+.ManageFeedbacks .feedbacks {
+  padding: 20px;
+  font-family: Sora;
+}
+
+#UpdateProduct input[type=text] {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+#UpdateProduct fieldset {
+  margin: 15px 0;
+  border: 1px solid silver;
+  padding: 15px 20px 0;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#UpdateProduct fieldset input[type=file] {
+  margin: 0;
+}
+
+#UpdateProduct legend {
+  padding: 2px;
 }
 /*# sourceMappingURL=style.css.map */

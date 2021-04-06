@@ -11,7 +11,7 @@ export default class HomeProduct extends React.Component {
                </div>
                <div className="card-body p-2 text-black">
                   <h6>{this.props.title}</h6>
-                  <span>Prix : <strong>{this.props.MinPrice}</strong> - {this.props.MaxPrice}</span>
+                  <span>Prix : <strong>{this.props.MinPrice}</strong> DH - {this.props.MaxPrice}</span>
                </div>
             </Link>
          </div>

@@ -10,10 +10,12 @@ import Admin_Login from './Admin/Login';
 import GererProduits from './Admin/AdminComponents/ManageProducts';
 import GererCommandes from './Admin/AdminComponents/ManageOrders';
 import MakeOrder from './amine-src/makeOrder';
+import UsersList from './Admin/AdminComponents/UsersList';
+import ManageFeedbacks from './Admin/AdminComponents/ManageFeedbacks';
+import TesUpload from './Admin/AdminComponents/testUploadImages';
+
 
 export default function App() {
-
-   
 
    return(
       <Router>
@@ -59,6 +61,21 @@ export default function App() {
                {/* Make Order */}
                <Route path="/makeOrder"> 
                   <MakeOrder/>
+               </Route>
+
+               {/* Users List */}
+               <Route path="/Admin/UsersList">
+                  <UsersList />
+               </Route>
+
+               {/* Manage Feebacks */}
+               <Route path="/Admin/Manage/Feedbacks">
+                  <ManageFeedbacks />
+               </Route>
+
+               {/* Test upload image */}
+               <Route path="/upload/image">
+                  <TesUpload/>
                </Route>
 
             </Switch>

@@ -6,7 +6,7 @@ import Aviss from './Avis';
 import SidePanier from './Panier';
 import Navbar from '../Navbar/navbar';
 import Footer from '../Footer/Footer';
-
+import {Link} from 'react-router-dom';
 
 const EachProd = () => {
 
@@ -26,7 +26,7 @@ const EachProd = () => {
 
     const [product, setProduct] = useState([{ id: 2, pic: "http://localhost/food/1.png", title: "Pastila Traditionnelle : Pastila fruit de mer", prix: 80, contity: 1 }]);
     const [nembre, setNembre] = useState(1);
-    const [active, setActive] = useState(0);
+    const [active, setActive] = useState(1);
     const [photo, setPhoto] = useState(images[active]);
     const [stylisht1, setStylisht, stlch] = CustomStyle(images, active);
     const [Avis, setAvis] = useState(0);
@@ -62,7 +62,7 @@ const EachProd = () => {
                 console.log("else her");
                 product.push(titles);
             }
-            setTurnOn(1);
+            setTurnOn(0);
             //setProduct(titles);
             setProduct(product);
         }
@@ -161,7 +161,7 @@ const EachProd = () => {
                                     </div>
                                 </section>
                                 <section className="comPan">
-                                    <button id="Commander" className="mb-2">Commander</button>
+                                    <Link to="/makeorder" data><button id="Commander" className="mb-2">Commander</button></Link>
                                     <button id="APanier" className="mb-2" onClick={Activer}>Ajouter au panier</button>
                                     <button className="btn-share bg-transparent border-0"><i className="fas fa-share mt-2"></i> Partager L'article</button>
                                 </section>
@@ -202,7 +202,7 @@ const EachProd = () => {
                     </div>
                 </section>
                 
-                <SideBasket />
+                {/* <SideBasket /> */}
             </div>
             <Footer/>
         </div>

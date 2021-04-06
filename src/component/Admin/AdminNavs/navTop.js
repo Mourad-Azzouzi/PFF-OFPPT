@@ -24,32 +24,32 @@ const TopNavbar = () => {
 							</a>
 							</li>
 							<li className="nav-item">
-							<Link className="nav-link" to="#">
+							<Link className="nav-link" to="/admin/manage/product">
 							<i class="fas fa-store"></i>
-							Gerer Le Produit</Link>
+							Gerer Les Produits</Link>
 							</li>
 							<li className="nav-item dropdown">
 							<a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="far fa-edit"></i>
 							Gerer Les Avis</a>
 							<div className="dropdown-menu drp-account" aria-labelledby="dropdownId">
-							<Link className="dropdown-item" to="#">
+							{/* <Link className="dropdown-item" to="#">
 							<i class="far fa-comment-alt"></i>
-							Gérer Les Avis</Link>
-							<Link className="dropdown-item" to="#">
+							Gérer Les Avis</Link> */}
+							<Link className="dropdown-item" to="/Admin/Manage/Feedbacks">
 							<i class="far fa-comment-alt"></i>
                   	Gérer Les Feedbakcs</Link>
 							</div>
 							</li>
 							<li className="nav-item">
-							<Link className="nav-link" to="#">
+							<Link className="nav-link" to="/Admin/UsersList">
 							<i class="fas fa-user-circle"></i>
 							Liste Utilisateurs</Link>
 							</li>
 							<li className="nav-item">
-							<Link className="nav-link" to="#">
+							<Link className="nav-link" to="/admin/manage/orders">
 							<i class="fas fa-user-cog"></i>
-							Configurer Mon Compte</Link>
+							Gérer Les Commandes</Link>
 							</li>
 							<li className="nav-item">
 							<Link className="nav-link" to="#">
