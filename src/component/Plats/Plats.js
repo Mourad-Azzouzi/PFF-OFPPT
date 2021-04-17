@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import Navbar from '../Navbar/navbar';
 import Footer from '../Footer/Footer';
 import CategoryPlats from './ProductCategory';
+import axios from 'axios';
 
 export default class Plats extends Component{
 
@@ -12,42 +13,9 @@ export default class Plats extends Component{
     plats: [
         {
             id:"1",
-            category: "Mini Salés (14)",
+            category: ``,
             product_details: [
-                {key:"1",  image:"http://192.168.2.110/food/1.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"230", MaxPrice:"500", likes:"110"},
-                {key:"2",  image:"http://192.168.2.110/food/2.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"230", MaxPrice:"500", likes:"123"},
-                {key:"3",  image:"http://192.168.2.110/food/3.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"150", MaxPrice:"500", likes:"145"},
-                {key:"4",  image:"http://192.168.2.110/food/4.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"400", MaxPrice:"500", likes:"144"},
-                {key:"5",  image:"http://192.168.2.110/food/5.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"350", MaxPrice:"500", likes:"191"},
-                {key:"6",  image:"http://192.168.2.110/food/6.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"299", MaxPrice:"500", likes:"300"},
-                {key:"7",  image:"http://192.168.2.110/food/7.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"205", MaxPrice:"500", likes:"457"},
-                {key:"8",  image:"http://192.168.2.110/food/2.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"200", MaxPrice:"500", likes:"1330"},
-                {key:"9",  image:"http://192.168.2.110/food/6.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"299", MaxPrice:"500", likes:"402"},
-                {key:"10", image:"http://192.168.2.110/food/5.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"159", MaxPrice:"500", likes:"415"},
-                {key:"11", image:"http://192.168.2.110/food/4.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"199", MaxPrice:"500", likes:"415"},
-                {key:"1",  image:"http://192.168.2.110/food/3.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"200", MaxPrice:"500", likes:"110"},
-                {key:"2",  image:"http://192.168.2.110/food/2.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"270", MaxPrice:"500", likes:"123"},
-                {key:"3",  image:"http://192.168.2.110/food/1.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"270", MaxPrice:"500", likes:"145"},
-                {key:"4",  image:"http://192.168.2.110/food/2.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"140", MaxPrice:"530", likes:"144"},
-                {key:"5",  image:"http://192.168.2.110/food/3.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"240", MaxPrice:"650", likes:"191"},
-                {key:"6",  image:"http://192.168.2.110/food/4.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"300", MaxPrice:"700", likes:"300"},
-                {key:"7",  image:"http://192.168.2.110/food/5.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"477", MaxPrice:"600", likes:"457"},
-                {key:"8",  image:"http://192.168.2.110/food/6.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"580", MaxPrice:"760", likes:"1330"},
-                {key:"9",  image:"http://192.168.2.110/food/7.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"190", MaxPrice:"600", likes:"402"},
-                {key:"10", image:"http://192.168.2.110/food/1.png",id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"366", MaxPrice:"700", likes:"415"},
-            ],
-        },
-        {
-            id:"2",
-            category: "Plat Traditionnels(7)",
-            product_details: [
-                {key:"1",  image:"http://192.168.2.110/food/1.png",id_cat:"2", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"230", MaxPrice:"500", likes:"110"},
-                {key:"2",  image:"http://192.168.2.110/food/2.png",id_cat:"2", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"230", MaxPrice:"500", likes:"123"},
-                {key:"3",  image:"http://192.168.2.110/food/3.png",id_cat:"2", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"150", MaxPrice:"500", likes:"145"},
-                {key:"4",  image:"http://192.168.2.110/food/4.png",id_cat:"2", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"400", MaxPrice:"500", likes:"144"},
-                {key:"5",  image:"http://192.168.2.110/food/5.png",id_cat:"2", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"350", MaxPrice:"500", likes:"191"},
-                {key:"6",  image:"http://192.168.2.110/food/6.png",id_cat:"2", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"299", MaxPrice:"500", likes:"300"},
-                {key:"7",  image:"http://192.168.2.110/food/7.png",id_cat:"2", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"205", MaxPrice:"500", likes:"457"},
+                {key:"1",  image:"http://192.168.2.110/food/1.png", id_cat:"1", title:"Pastila Traditionnelle : Pastilla fruit de mer", MinPrice:"230", MaxPrice:"500", likes:"110"},
             ],
         },
     ],
@@ -58,9 +26,20 @@ export default class Plats extends Component{
     mapping(category) {
         return (
             category.map((cat) => 
-            <CategoryPlats id={cat.key} category={cat.category} product_details={cat.product_details}/>
+            <CategoryPlats id={cat.key} category={cat.category} product_count = {cat.product_count} product_details={cat.product_details}/>
             )
         )
+    }
+
+    // Fetch Category With All Products
+    FetchCategoryTHAllProducts(){
+        axios.get('https://localhost:44397/category/Get/Categories/Products')
+        .then(res => this.setState({plats : res.data}))
+        .catch(err => console.log(err))
+    }
+
+    componentDidMount(){
+        this.FetchCategoryTHAllProducts();
     }
 
     render(){

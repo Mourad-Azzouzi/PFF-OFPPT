@@ -5,7 +5,7 @@ export default class HomeProduct extends React.Component {
    render() {
       return (
          <div className="product owl-stage-outer card p-0">
-            <Link to="/Product">
+            <Link to={"/Product/"+this.props.idProduct}>
                <div className="card-header p-0 m-0">
                   <img className="w-100" src={this.props.image} />
                </div>

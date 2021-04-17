@@ -6,15 +6,16 @@ import Aviss from './Avis';
 import SidePanier from './Panier';
 import Navbar from '../Navbar/navbar';
 import Footer from '../Footer/Footer';
-import {Link} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
+import axios from 'axios';
 
 const EachProd = () => {
 
-    var images = {
-        0: "http://localhost/food/1.png",
-        1: "http://localhost/food/2.png",
-        2: "http://localhost/food/3.png"
-    };
+    const {idProduct} = useParams()
+
+    
+
+    
     const myStyle1 = {
         color: "rgb(226, 43, 217)",
         borderBottom: "7px solid rgb(226, 43, 217)"
@@ -23,8 +24,14 @@ const EachProd = () => {
         color: "black",
         border: "none"
     };
-
+    
+    const [ProductDetails, SetProductDetails] = useState([{}]);
     const [product, setProduct] = useState([{ id: 2, pic: "http://localhost/food/1.png", title: "Pastila Traditionnelle : Pastila fruit de mer", prix: 80, contity: 1 }]);
+    var images = {
+        1: ProductDetails[0].image1,
+        2: ProductDetails[0].image2,
+        0: ProductDetails[0].image3,
+    };
     const [nembre, setNembre] = useState(1);
     const [active, setActive] = useState(1);
     const [photo, setPhoto] = useState(images[active]);
@@ -42,6 +49,8 @@ const EachProd = () => {
          titles.push({pic: "/photos/cars.jpg",title: "Pastila Traditionnelle : Pastila fruit de mer", prix:40, contity:nembre});
          titles.push({pic: "/photos/cars.jpg",title: "Pastila Traditionnelle : Pastila fruit de mer", prix:40, contity:nembre});
      };*/
+
+     
     console.log("first Pro", product);
     var titles = { id: 1, pic: "/photos/ffn.jpg", title: "Pastila Traditionnelle : Pastila fruit de mer", prix: 40, contity: nembre };
     var cmp = 0;
@@ -92,6 +101,8 @@ const EachProd = () => {
 
 
     useEffect(() => {
+        FetchProduct();
+
         setTurnOn(addtoP);
         if (nembre < 1) {
             setNembre(1)
@@ -101,9 +112,12 @@ const EachProd = () => {
         }
     }, [nembre, addtoP, turnOn, SupSB]);
 
-
-
-
+    // Fetch Product details
+    var FetchProduct = () =>{
+        axios.get('https://localhost:44397/product/get/'+idProduct)
+        .then(res => SetProductDetails(res.data))
+        .catch(err => console.log(err))
+    }
     return (
         <div className="main">
             <Navbar/>
@@ -113,14 +127,14 @@ const EachProd = () => {
                         <div className="ProdPic">
                             <img src={photo !== images[active] ? images[active] : photo} alt="Selected Picture" />
                             <section className="OtherPic d-flex ">
-                                <img id="Pic3" src={images[1]} className="shadow" alt="cars" data-index={1} onClick={(e) => { setActive(e.target.dataset.index) }} style={stylisht1.apply()} />
-                                <img id="Pic3" src={images[2]} className="shadow" alt="cars" data-index={2} onClick={(e) => { setActive(e.target.dataset.index) }} style={setStylisht.apply()} />
-                                <img id="Pic3" src={images[0]} className="shadow" alt="cars" data-index={0} onClick={(e) => { setActive(e.target.dataset.index) }} style={stlch.apply()} />
+                                <img id="Pic3" src={ProductDetails[0].image1} className="shadow" alt="cars" data-index={1} onClick={(e) => { setActive(e.target.dataset.index) }} style={stylisht1.apply()} />
+                                <img id="Pic3" src={ProductDetails[0].image2} className="shadow" alt="cars" data-index={2} onClick={(e) => { setActive(e.target.dataset.index) }} style={setStylisht.apply()} />
+                                <img id="Pic3" src={ProductDetails[0].image3} className="shadow" alt="cars" data-index={0} onClick={(e) => { setActive(e.target.dataset.index) }} style={stlch.apply()} />
                             </section>
                         </div>
                         <div className="information">
                             <div className="infos p-0">
-                                <h4>{titles.title}</h4>
+                                <h4>{ProductDetails[0].title}</h4>
                                 <section className="reviews">
                                     <div className="stars">
                                         <i class="fas fa-star"></i>
@@ -134,7 +148,7 @@ const EachProd = () => {
                                     </div>
                                 </section>
                                 <section className="Price">
-                                    Prix : <strong>{titles.prix},00 DH</strong> - 800
+                                    Prix : <strong>{ProductDetails[0].price1} DH</strong> - {ProductDetails[0].price10}
                                 </section>
                                 
                                 <section className="nbPersonnes">

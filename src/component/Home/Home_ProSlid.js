@@ -13,6 +13,7 @@ export default class ProductSlider extends React.Component {
                title={e.title}
                MinPrice={e.price1}
                MaxPrice={e.price10}
+               idProduct={e.idProduct}
             />
          )
       )

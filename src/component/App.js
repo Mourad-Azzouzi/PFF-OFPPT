@@ -1,5 +1,5 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch, useParams } from 'react-router-dom';
 import Home from './Home/home';
 import Plats from './Plats/Plats';
 import Login from './Account/login';
@@ -15,70 +15,84 @@ import ManageFeedbacks from './Admin/AdminComponents/ManageFeedbacks';
 import TesUpload from './Admin/AdminComponents/testUploadImages';
 
 
-export default function App() {
+const App = () => {
 
-   return(
+   
+   useEffect( () => {
+      
+   },[])
+
+   return (
       <Router>
-            <Switch>
-               {/* Home Component*/}
-               <Route exact path="/">
-                  <Home/>
-               </Route>
-               {/* Nos Plats Component */}
-               <Route path="/Plats">
-                  <Plats/>
-               </Route>
-               {/* Login Component*/}
-               <Route path="/Login">
-                  <Login/>
-               </Route>
-               {/* Register Component*/}
-               <Route path="/Register">
-                  <Register/>
-               </Route>
-               {/* User Component / Mes Information */}
-               <Route path="/User/Personal-info">
-                  <MesInformation/>
-               </Route>
-               {/* Product infos */}
-               <Route path="/Product">
-                  <Product/>
-               </Route>
-               {/* Admin Page - Login */}
-               <Route path="/Admin/Login">
-                  <Admin_Login/>
-               </Route>
-               {/* Admin - Product Management */}
-               <Route path="/Admin/Manage/Product">
-                  <GererProduits/>
-               </Route>
+         <Switch>
+            {/* Home Component*/}
+            <Route exact path="/">
+               <Home />
+            </Route>
 
-               {/* This Is For Test */}
-               <Route path="/Admin/Manage/Orders"> 
-                  <GererCommandes/>                 
-               </Route>
+            {/* Nos Plats */}
+            <Route path="/Plats">
+               <Plats/>
+            </Route>    
 
-               {/* Make Order */}
-               <Route path="/makeOrder"> 
-                  <MakeOrder/>
-               </Route>
+            {/* Product Page */}
+            <Route path="/Product/:idProduct">
+               <Product/>
+            </Route>
 
-               {/* Users List */}
-               <Route path="/Admin/UsersList">
-                  <UsersList />
-               </Route>
+            {/* Login Component*/}
+            <Route path="/Login">
+               <Login />
+            </Route>
 
-               {/* Manage Feebacks */}
-               <Route path="/Admin/Manage/Feedbacks">
-                  <ManageFeedbacks />
-               </Route>
+            {/* Register Component*/}
+            <Route path="/Register">
+               <Register />
+            </Route>
 
-               {/* Test upload image */}
-               <Route path="/upload/image">
-                  <TesUpload/>
-               </Route>
+            {/* User Component / Mes Information */}
+            <Route path="/User/Personal-info">
+               <MesInformation />
+            </Route>
 
-            </Switch>
+            {/* Admin Page - Login */}
+            <Route path="/Admin/Login">
+               <Admin_Login />
+            </Route>
+
+            {/* Admin - Product Management */}
+            <Route path="/Admin/Manage/Product">
+               <GererProduits />
+            </Route>
+
+            {/* This Is For Test */}
+            <Route path="/Admin/Manage/Orders">
+               <GererCommandes />
+            </Route>
+
+            {/* Make Order */}
+            <Route path="/makeOrder">
+               <MakeOrder />
+            </Route>
+
+            {/* Users List */}
+            <Route path="/Admin/UsersList">
+               <UsersList />
+            </Route>
+
+            {/* Manage Feebacks */}
+            <Route path="/Admin/Manage/Feedbacks">
+               <ManageFeedbacks />
+            </Route>
+
+            {/* Test upload image */}
+            <Route path="/upload/image">
+               <TesUpload />
+            </Route>
+
+         </Switch>
       </Router>
    )
 }
+
+export default App;
