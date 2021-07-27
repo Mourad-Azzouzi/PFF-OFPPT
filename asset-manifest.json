@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/PFF-OFPPT/static/css/main.12ee00e3.chunk.css",
+    "main.js": "/PFF-OFPPT/static/js/main.3565633f.chunk.js",
+    "main.js.map": "/PFF-OFPPT/static/js/main.3565633f.chunk.js.map",
+    "runtime-main.js": "/PFF-OFPPT/static/js/runtime-main.f31885f6.js",
+    "runtime-main.js.map": "/PFF-OFPPT/static/js/runtime-main.f31885f6.js.map",
+    "static/css/2.979034dc.chunk.css": "/PFF-OFPPT/static/css/2.979034dc.chunk.css",
+    "static/js/2.185e830b.chunk.js": "/PFF-OFPPT/static/js/2.185e830b.chunk.js",
+    "static/js/2.185e830b.chunk.js.map": "/PFF-OFPPT/static/js/2.185e830b.chunk.js.map",
+    "index.html": "/PFF-OFPPT/index.html",
+    "static/css/2.979034dc.chunk.css.map": "/PFF-OFPPT/static/css/2.979034dc.chunk.css.map",
+    "static/css/main.12ee00e3.chunk.css.map": "/PFF-OFPPT/static/css/main.12ee00e3.chunk.css.map",
+    "static/js/2.185e830b.chunk.js.LICENSE.txt": "/PFF-OFPPT/static/js/2.185e830b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f31885f6.js",
+    "static/css/2.979034dc.chunk.css",
+    "static/js/2.185e830b.chunk.js",
+    "static/css/main.12ee00e3.chunk.css",
+    "static/js/main.3565633f.chunk.js"
+  ]
+}
