@@ -1,12 +1,5 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "homepage": "http://mourad-azzouzi.github.io/PFF-OFPPT/",
-=======
   "homepage":"https://mourad-azzouzi.github.io/PFF-OFPPT/",
->>>>>>> f28a240894963e37ca11da23b0a356f47de403f9
-=======
->>>>>>> 4182f380abf147161ba3732fefbe61beccf3cb9b
   "name": "first-react-app",
   "version": "0.1.0",
   "private": true,
@@ -31,6 +24,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
